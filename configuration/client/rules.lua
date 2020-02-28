@@ -25,6 +25,27 @@ awful.rules.rules = {
       maximized_vertical = false
     }
   },
+  -- Firefox opens in browser tag
+  {
+    rule = { class = "Firefox" },
+    properties = { tag = "1" }
+  },
+  {
+    rule = { class = "Code" },
+    properties = { tag = "2" }
+  },
+  {
+    rule = { class = "discord" },
+    properties = { tag = "3" }
+  },
+  {
+    rule = { class = "Nautilus" },
+    properties = { tag = "4" }
+  },
+  {
+    rule = { class = "Spotify" },
+    properties = { tag = "5" }
+  },
   {
     rule_any = {name = {'QuakeTerminal'}},
     properties = {skip_decoration = true}

@@ -78,3 +78,21 @@ _G.client.connect_signal(
     c.border_color = beautiful.border_normal
   end
 )
+
+-- Listen for class
+client.connect_signal("manage", function (c)
+  if c.class == nil then
+    c.minimized = true
+    c:connect_signal("property::class", function ()
+      c.minimized = false
+      awful.rules.apply(c)
+    end)
+  end
+end)
+
+-- Startup applications
+awful.spawn("firefox", {tag = "1"})
+awful.spawn("discord", {tag = "3"})
+awful.spawn("spotify" , {tag = "5"})
+awful.spawn("nautilus", {tag = "4"})
+awful.spawn("code", {tag = "2"})

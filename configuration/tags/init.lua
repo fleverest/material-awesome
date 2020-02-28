@@ -4,9 +4,9 @@ local icons = require('theme.icons')
 
 local tags = {
   {
-    icon = icons.chrome,
-    type = 'chrome',
-    defaultApp = 'google-chrome-beta',
+    icon = icons.firefox,
+    type = 'firefox',
+    defaultApp = 'firefox',
     screen = 1
   },
   {
@@ -18,7 +18,7 @@ local tags = {
   {
     icon = icons.social,
     type = 'social',
-    defaultApp = 'station',
+    defaultApp = 'discord',
     screen = 1
   },
   {
@@ -30,7 +30,7 @@ local tags = {
   {
     icon = icons.music,
     type = 'music',
-    defaultApp = 'youtube-music',
+    defaultApp = 'spotify',
     screen = 1
   },
   {
